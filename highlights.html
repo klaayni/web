@@ -2,180 +2,6 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWLD9DTFQB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YWLD9DTFQB');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>klaayn - Highlights</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div id="logo" style="text-align: center; margin-bottom: 0px;">
-            <a href="/">
-                <img src="assets/images/logo.png" alt="Logo">
-            </a>
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav>
-            <ul id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="highlights.html">Highlights</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="video-container">
-            <div class="highlight">
-                <video width=100% controls loop id="hero-video">
-                    <source src="https://drive.google.com/file/d/1ACfWmhLiLkX0ML44o2vRK_ETsZa2fhwU/preview" preload="auto" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h2>welcome to my college💫</h2>
-                <p>College is like being Adults and
-                    living Kids Life.
-                     This is my college during final year of my enginnering.
-                     It's also my best mobile-shot and edited college video, which obviously got so much appreciation from friends.
-                     April 18, 2023
-                    
-                </p>
-                <a href="https://drive.google.com/file/d/1ACfWmhLiLkX0ML44o2vRK_ETsZa2fhwU/preview" target="_blank" class="play-button">Play Now</a>
-            </div>
-            <div class="highlight">
-                <video width=100% height=auto controls loop id="hero-video">
-                    <source src="https://drive.google.com/file/d/17HvSvlfUhEB8D7b2afPqFNkQLxYtZ5HG/preview" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h2>melukote</h2>
-                <p>Life with my favorite people, experiencing Melukote's beauty: boarding random bus, waited 90 minutes for Teju: Made everything happen like a guide.
-                     Bettada Yoganarasimha: Mosaru anna & puliyogare at peak. Cheluva Narayana Swami, Subbanna Mess: SakkarePongal.
-                     June 29, 2024
-                    
-                </p>
-                <a href="https://drive.google.com/file/d/17HvSvlfUhEB8D7b2afPqFNkQLxYtZ5HG/preview" target="_blank" class="play-button">Play Now</a>
-            </div>
-            <div class="highlight">
-                <video width=100% height=auto controls loop id="hero-video">
-                    <source src="https://drive.google.com/file/d/1T_emKPDs0lN_FL-T4RqIMgvZzmFJoeea/preview" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h2>Home Garden Aestetics✨</h2>
-                <p>Home means everything to me—a place filled with plants cared for like babies and flowers that never fail to make me smile.
-                    This is my garden, captured and edited entirely on my phone, with all my best camera-angle experiments.
-                     May 29, 2023
-                    
-                </p>
-                <!--<a href="https://drive.google.com/file/d/1T_emKPDs0lN_FL-T4RqIMgvZzmFJoeea/preview" target="_blank" class="play-button "><h2>Home Garden Aestetics✨</h2></a> -->
-                <a href="https://drive.google.com/file/d/1T_emKPDs0lN_FL-T4RqIMgvZzmFJoeea" target="_blank" class="play-button ">Play Now</a>
-            </div>
-        </section>
-    </main>
-
-        <!-- Footer -->
-    <footer>
-        <ul>
-            <li><a href="https://www.instagram.com/klaayn_" target="_blank">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/klaayn/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/klaayni" target="_blank">Github</a></li>
-            <li><a href="https://klaayn.substack.com/" target="_blank">Newsletter</a></li>
-        </ul>
-        <p>© 2025 klaayn. All rights reserved.</p>
-    </footer>
-    <script src="assets/js/script.js"></script>
-    <!-- Lightbox Video Player -->
-<!-- Lightbox Video Player -->
-<div class="lightbox" id="lightbox">
-    <div class="lightbox-content">
-        <button class="close-lightbox" id="closeLightbox" aria-label="Close video">&times;</button>
-        <video controls class="lightbox-video" id="lightboxVideo">
-            <!-- Video source will be inserted by JavaScript -->
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="nav-controls">
-            <button class="nav-btn" id="prevBtn" aria-label="Previous video">&#10094;</button>
-            <button class="nav-btn" id="nextBtn" aria-label="Next video">&#10095;</button>
-        </div>
-    </div>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Lightbox elements
-    const lightbox = document.getElementById('lightbox');
-    const lightboxVideo = document.getElementById('lightboxVideo');
-    const closeBtn = document.getElementById('closeLightbox');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const playButtons = document.querySelectorAll('.play-button');
-    const highlights = document.querySelectorAll('.highlight');
-    let currentHighlightIndex = 0;
-
-    // Play button functionality
-    playButtons.forEach((button, index) => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            currentHighlightIndex = index;
-            openLightbox(currentHighlightIndex);
-        });
-    });
-
-    // Lightbox controls
-    function openLightbox(index) {
-        const highlight = highlights[index];
-        const videoSrc = highlight.querySelector('source').src;
-        const video = highlight.querySelector('video');
-        
-        // Reset and prepare lightbox video
-        lightboxVideo.pause();
-        lightboxVideo.currentTime = 0;
-        
-        // Copy attributes from original video
-        Array.from(video.attributes).forEach(attr => {
-            if (!['id', 'style', 'width', 'height'].includes(attr.name)) {
-                lightboxVideo.setAttribute(attr.name, attr.value);
-            }
-        });
-        
-        lightboxVideo.src = videoSrc;
-        document.body.classList.add('lightbox-active');
-        lightbox.classList.add('active');
-        
-        lightboxVideo.play().catch(e => {
-            console.log('Autoplay prevented, user will need to click play');
-        });
-    }
-
-    function closeLightbox() {
-        lightboxVideo.pause();
-        document.body.classList.remove('lightbox-active');
-        lightbox.classList.remove('active');
-    }
-
-    function navigate(direction) {
-        currentHighlightIndex = (currentHighlightIndex + direction + highlights.length) % highlights.length;
-        openLightbox(currentHighlightIndex);
-    }
-
-    // Event listeners<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWLD9DTFQB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -188,9 +14,45 @@ document.addEventListener('DOMContentLoaded', function() {
     <title>klaayn - Highlights</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Mobile Menu Fix */
+        @media (max-width: 768px) {
+            #nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            #nav-links.show {
+                display: flex;
+            }
+        }
+        
+        /* Video Container Fix */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header with Fixed Mobile Menu -->
     <header>
         <div id="logo" style="text-align: center; margin-bottom: 0px;">
             <a href="/">
@@ -215,10 +77,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <main>
         <section id="video-container">
+            <!-- Video 1 -->
             <div class="highlight">
-                <div style="position:relative;padding-top:56.25%;">
+                <div class="video-container">
                     <iframe src="https://drive.google.com/file/d/1ACfWmhLiLkX0ML44o2vRK_ETsZa2fhwU/preview" 
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" 
                             allow="autoplay; fullscreen" 
                             allowfullscreen>
                     </iframe>
@@ -228,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="https://drive.google.com/file/d/1ACfWmhLiLkX0ML44o2vRK_ETsZa2fhwU/view" target="_blank" class="play-button">Play Now</a>
             </div>
             
+            <!-- Video 2 -->
             <div class="highlight">
-                <div style="position:relative;padding-top:56.25%;">
+                <div class="video-container">
                     <iframe src="https://drive.google.com/file/d/17HvSvlfUhEB8D7b2afPqFNkQLxYtZ5HG/preview" 
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" 
                             allow="autoplay; fullscreen" 
                             allowfullscreen>
                     </iframe>
@@ -241,10 +103,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="https://drive.google.com/file/d/17HvSvlfUhEB8D7b2afPqFNkQLxYtZ5HG/view" target="_blank" class="play-button">Play Now</a>
             </div>
             
+            <!-- Video 3 -->
             <div class="highlight">
-                <div style="position:relative;padding-top:56.25%;">
+                <div class="video-container">
                     <iframe src="https://drive.google.com/file/d/1T_emKPDs0lN_FL-T4RqIMgvZzmFJoeea/preview" 
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" 
                             allow="autoplay; fullscreen" 
                             allowfullscreen>
                     </iframe>
@@ -266,98 +128,23 @@ document.addEventListener('DOMContentLoaded', function() {
         </ul>
         <p>© 2025 klaayn. All rights reserved.</p>
     </footer>
+
     <script src="assets/js/script.js"></script>
-    
-    <!-- Lightbox Video Player -->
-    <div class="lightbox" id="lightbox">
-        <div class="lightbox-content">
-            <button class="close-lightbox" id="closeLightbox" aria-label="Close video">&times;</button>
-            <div style="position:relative;padding-top:56.25%;">
-                <iframe class="lightbox-video" id="lightboxVideo"
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"
-                        allow="autoplay; fullscreen"
-                        allowfullscreen>
-                </iframe>
-            </div>
-            <div class="nav-controls">
-                <button class="nav-btn" id="prevBtn" aria-label="Previous video">&#10094;</button>
-                <button class="nav-btn" id="nextBtn" aria-label="Next video">&#10095;</button>
-            </div>
-        </div>
-    </div>
-
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Lightbox elements
-        const lightbox = document.getElementById('lightbox');
-        const lightboxVideo = document.getElementById('lightboxVideo');
-        const closeBtn = document.getElementById('closeLightbox');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const playButtons = document.querySelectorAll('.play-button');
-        const highlights = document.querySelectorAll('.highlight');
-        let currentHighlightIndex = 0;
-
-        // Play button functionality
-        playButtons.forEach((button, index) => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                currentHighlightIndex = index;
-                openLightbox(currentHighlightIndex);
-            });
-        });
-
-        // Lightbox controls
-        function openLightbox(index) {
-            const highlight = highlights[index];
-            const videoSrc = highlight.querySelector('iframe').src;
-            
-            lightboxVideo.src = videoSrc;
-            document.body.classList.add('lightbox-active');
-            lightbox.classList.add('active');
+    // Mobile Menu Toggle
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show');
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const navLinks = document.getElementById('nav-links');
+        const menuIcon = document.querySelector('.menu-icon');
+        if (!menuIcon.contains(e.target) && !navLinks.contains(e.target)) {
+            navLinks.classList.remove('show');
         }
-
-        function closeLightbox() {
-            lightboxVideo.src = '';
-            document.body.classList.remove('lightbox-active');
-            lightbox.classList.remove('active');
-        }
-
-        function navigate(direction) {
-            currentHighlightIndex = (currentHighlightIndex + direction + highlights.length) % highlights.length;
-            openLightbox(currentHighlightIndex);
-        }
-
-        // Event listeners
-        prevBtn.addEventListener('click', () => navigate(-1));
-        nextBtn.addEventListener('click', () => navigate(1));
-        closeBtn.addEventListener('click', closeLightbox);
-        lightbox.addEventListener('click', (e) => e.target === lightbox && closeLightbox());
-        
-        document.addEventListener('keydown', (e) => {
-            if (lightbox.classList.contains('active')) {
-                if (e.key === 'Escape') closeLightbox();
-                else if (e.key === 'ArrowLeft') navigate(-1);
-                else if (e.key === 'ArrowRight') navigate(1);
-            }
-        });
     });
     </script>
-</body>
-</html>
-    prevBtn.addEventListener('click', () => navigate(-1));
-    nextBtn.addEventListener('click', () => navigate(1));
-    closeBtn.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => e.target === lightbox && closeLightbox());
-    
-    document.addEventListener('keydown', (e) => {
-        if (lightbox.classList.contains('active')) {
-            if (e.key === 'Escape') closeLightbox();
-            else if (e.key === 'ArrowLeft') navigate(-1);
-            else if (e.key === 'ArrowRight') navigate(1);
-        }
-    });
-});
-</script>
 </body>
 </html>
